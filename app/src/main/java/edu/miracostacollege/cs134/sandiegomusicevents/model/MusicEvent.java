@@ -7,53 +7,95 @@ package edu.miracostacollege.cs134.sandiegomusicevents.model;
  * about the event.
  *
  * @author Michael Paulding
- * @version 1.0
+ * @version 2.0
  */
 public class MusicEvent {
 
-    /**
-     * The titles of upcoming music events.
-     */
-    public static String[] titles = {
-            "Justin Timberlake", "Blues Traveler", "Gladys Knight", "Ariana Grande",
-            "Goo Goo Dolls", "Rebelution", "Carlos Santana", "Ozzy Osbourne"};
+    // Every instance var in Java class should mimic the JSON file
+    private String mArtist;
+    private String mDate;
+    private String mDay;
+    private String mTime;
+    private String mVenue;
+    private String mCity;
+    private String mState;
+    private String mImageName;
 
+    public String getArtist() {
+        return mArtist;
+    }
 
-    /**
-     * The details of upcoming music events.
-     */
-    public static String[] details = {
-            "February 21\n" +
-                    "Thursday - 8:00 PM\n" +
-                    "Pechanga Arena\n" +
-                    "San Diego, CA" ,
-            "February 28\n" +
-                    "Thursday - 7:00 PM\n" +
-                    "House of Blues\n" +
-                    "San Diego, CA" ,
-            "March 9\n" +
-                    "Saturday - 7:00 PM\n" +
-                    "Pechanga Resort and Casino\n" +
-                    "Temecula, CA",
-            "April 12\n" +
-                    "Friday - 3:30 AM\n" +
-                    "Coachella 2019\n" +
-                    "Indio, CA",
-            "June 14\n" +
-                    "Friday- 7:00 PM\n" +
-                    "North Island Amphitheatre\n" +
-                    "Chula Vista, CA",
-            "June 15\n" +
-                    "Saturday - 7:00 PM\n" +
-                    "North Island Amphitheatre\n" +
-                    "Chula Vista, CA",
-            "June 23\n" +
-                    "Sunday - 7:00 PM\n" +
-                    "North Island Amphitheatre\n" +
-                    "Chula Vista, CA",
-            "July 23\n" +
-                    "Tuesday - 7:30 PM\n" +
-                    "North Island Amphitheatre\n" +
-                    "Chula Vista, CA"
-    };
+    public void setArtist(String artist) {
+        mArtist = artist;
+    }
+
+    public String getDate() {
+        return mDate;
+    }
+
+    public void setDate(String date) {
+        mDate = date;
+    }
+
+    public String getDay() {
+        return mDay;
+    }
+
+    public void setDay(String day) {
+        mDay = day;
+    }
+
+    public String getTime() {
+        return mTime;
+    }
+
+    public void setTime(String time) {
+        mTime = time;
+    }
+
+    public String getVenue() {
+        return mVenue;
+    }
+
+    public void setVenue(String venue) {
+        mVenue = venue;
+    }
+
+    public String getCity() {
+        return mCity;
+    }
+
+    public void setCity(String city) {
+        mCity = city;
+    }
+
+    public String getState() {
+        return mState;
+    }
+
+    public void setState(String state) {
+        mState = state;
+    }
+
+    public String getImageName() {
+        return mImageName;
+    }
+
+    public void setImageName(String imageName) {
+        mImageName = imageName;
+    }
+
+    @Override
+    public String toString() {
+        return "MusicEvent{" +
+                "mArtist='" + mArtist + '\'' +
+                ", mDate='" + mDate + '\'' +
+                ", mDay='" + mDay + '\'' +
+                ", mTime='" + mTime + '\'' +
+                ", mVenue='" + mVenue + '\'' +
+                ", mCity='" + mCity + '\'' +
+                ", mState='" + mState + '\'' +
+                ", mImageName='" + mImageName + '\'' +
+                '}';
+    }
 }

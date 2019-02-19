@@ -8,12 +8,8 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
 import java.io.IOException;
 import java.io.InputStream;
-
-import edu.miracostacollege.cs134.sandiegomusicevents.R;
 
 public class EventDetailsActivity2 extends AppCompatActivity {
 
@@ -28,8 +24,8 @@ public class EventDetailsActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_event_details);
 
         eventImageView = findViewById(R.id.eventImageView);
-        eventTitleTextView = findViewById(R.id.eventTitleTextView);
-        eventDetailsTextView = findViewById(R.id.eventDetailsTextView);
+        eventTitleTextView = findViewById(R.id.artistName);
+        eventDetailsTextView = findViewById(R.id.performanceDayDate);
 
         // Retrieve the intent
         Intent mainIntent = getIntent();
